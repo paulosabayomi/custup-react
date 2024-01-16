@@ -1,46 +1,167 @@
-# Getting Started with Create React App
+# CustUp React Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The React JS version of CustUp, written in TypeScript
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+```bash
+npm i custup @custup/react
+```
 
-### `npm start`
+## Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Import it into your component like so
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```jsx
+// ...
+import CustUp from "@custup/react"
+// ...
+```
 
-### `npm test`
+Then import the `all.min.css` in your `index.js` or `index.tsx` file
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```tsx
+// ...
+import "custup/src/all.min.css";
+// ...
+```
 
-### `npm run build`
+Then add CustUp component to where you want CustUp to be created
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```jsx
+// ExampleComponent.jsx
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+const ExampleComponent = React.memo((props) => {
+    return (
+        <div>
+            <CustUp 
+                id="first-example-instance" 
+            />
+        </div>
+    )
+})
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
 
-### `npm run eject`
+Or if you're using TypeScript
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```tsx
+// ExampleComponent.tsx
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+const ExampleComponent = React.memo((props: any) => {
+    return (
+        <div>
+            <CustUp 
+                id="first-example-instance" 
+            />
+        </div>
+    )
+})
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To use `ref` with CustUp, let's use the TypeScript `ExampleComponent.tsx` component
 
-## Learn More
+```tsx
+// ExampleComponent.tsx
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+// ...
+import { TCustUp } from "@custup/react";
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+const ExampleComponent = React.memo((props: any) => {
+    const ref1 = React.useRef<TCustUp | undefined>()
+
+    const exampleCustUpSubmit = React.memo(() => {
+        ref1.current?.upload();
+    }, [ref1.current])
+
+    return (
+        <div>
+            <CustUp 
+                ref={ref1}
+                id="first-example-instance" 
+            />
+
+            <button onClick={exampleCustUpSubmit}>Upload</button>
+        </div>
+    )
+})
+
+```
+
+And you can also have multiple CustUp components in the same component, only make sure the `id` props are not the same
+
+```tsx
+// ExampleComponent.tsx
+
+// ...
+import { TCustUp } from "@custup/react";
+
+const ExampleComponent = React.memo((props: any) => {
+    const ref1 = React.useRef<TCustUp | undefined>()
+    const ref2 = React.useRef<TCustUp | undefined>()
+    const ref3 = React.useRef<TCustUp | undefined>()
+
+    const exampleCustUpSubmit = React.memo(() => {
+        ref1.current?.upload();
+    }, [ref1.current])
+
+    return (
+        <div>
+            <CustUp 
+                ref={ref1}
+                id="first-example-instance" 
+            />
+            <CustUp 
+                ref={ref2}
+                id="second-example-instance" 
+            />
+            <CustUp 
+                ref={ref3}
+                id="third-example-instance" 
+            />
+        </div>
+    )
+})
+
+```
+
+You can use `ref` to subscribe to CustUp events
+
+```tsx
+// ExampleComponent.tsx
+
+// ...
+import { TCustUp } from "@custup/react";
+
+const ExampleComponent = React.memo((props: any) => {
+    const ref1 = React.useRef<TCustUp | undefined>()
+
+    React.useLayoutEffect(() => {
+
+        ref1.current?.on("file.afterAdded", (e) => {
+            console.log("file was added", e)
+        })
+
+    }, [ref1.current])
+
+
+    return (
+        <div>
+            <CustUp 
+                ref={ref1}
+                id="first-example-instance" 
+            />
+        </div>
+    )
+})
+
+```
+
+All CustUp options can be passed as props to the CustUp component, all [CustUp props can be see here](https://custup.pryxy.com/docs/category/options).
+
+[Visit the Documentation website](https://custup.pryxy.com) to see the complete CustUp documentation and other cool things you can do with CustUp.
+
+## License
+
+MIT License
