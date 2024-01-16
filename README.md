@@ -169,7 +169,7 @@ const ExampleComponent = React.memo((props: any) => {
 All CustUp options can be passed as props to the CustUp component, all [CustUp props can be see here](https://custup.pryxy.com/docs/category/options).
 
 [Visit the Documentation website](https://custup.pryxy.com) to see the complete CustUp documentation and other cool things you can do with CustUp.
-
+  
 CustUp main [github repository](https://github.com/paulosabayomi/CustUp).
   
 ## License
