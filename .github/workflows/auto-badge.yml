@@ -1,0 +1,55 @@
+name: Add Badges
+on:
+  push:
+    branches:
+      - master
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: wow-actions/add-badges@v1
+        env:
+          repo_url: ${{ github.event.repository.html_url }}
+          repo_name: ${{ github.event.repository.name }}
+          repo_owner: ${{ github.event.repository.owner.login }}
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          center: true
+          badges: |
+            [
+              {
+                "badge": "https://img.shields.io/github/license/paulosabayomi/CustUp?style=flat-square",
+                "alt": "MIT License",
+                "link": "${{ env.repo_url }}/blob/master/LICENSE"
+              },
+              {
+                "badge": "https://img.shields.io/badge/logo-javascript-blue?logo=javascript",
+                "alt": "Language",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript"
+              },
+              {
+                "badge": "https://img.shields.io/badge/logo-reactjs-blue?logo=react",
+                "alt": "React JS",
+                "link": "https://reactjs.dev"
+              },
+              {
+                "badge": "https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square",
+                "alt": "PRs Welcome",
+                "link": "${{ env.repo_url }}/pulls" 
+              },
+              {
+                "badge": "https://github.com/paulosabayomi/custup-react/actions/workflows/node.js.yml/badge.svg",
+                "alt": "Tests",
+                "link": "${{ env.repo_url }}/actions/workflows/node.js.yml"
+              },
+              {
+                "badge": "https://github.com/paulosabayomi/custup-react/actions/workflows/npm-publish.yml/badge.svg",
+                "alt": "Publish to NPM",
+                "link": "${{ env.repo_url }}/actions/workflows/npm-publish.yml"
+              },
+              {
+                "badge": "https://img.shields.io/badge/logo-typescript-blue?logo=typescript",
+                "alt": "TypeScript",
+                "link": "https://www.typescriptlang.org/"
+              }
+            ]

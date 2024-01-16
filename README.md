@@ -1,5 +1,13 @@
 # CustUp React Library
 
+<div align="center">
+    <img src="https://github.com/paulosabayomi/CustUp/blob/master/_assets/custup.png" alt="Custup logo" width="200" style="object-fit: contain; justify-self:center;"/>
+</div>
+
+<!-- [START BADGES] -->
+<!-- Please keep comment here to allow auto update -->
+<!-- [END BADGES] -->
+
 The React JS version of CustUp, written in TypeScript
 
 ## Installation
@@ -162,6 +170,8 @@ All CustUp options can be passed as props to the CustUp component, all [CustUp p
 
 [Visit the Documentation website](https://custup.pryxy.com) to see the complete CustUp documentation and other cool things you can do with CustUp.
 
+CustUp main [github repository](https://github.com/paulosabayomi/CustUp).
+
 ## License
 
-MIT License
+[MIT License](https://github.com/paulosabayomi/custup-react/blob/main/LICENSE)
