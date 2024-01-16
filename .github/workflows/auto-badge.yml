@@ -2,7 +2,7 @@ name: Add Badges
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -20,7 +20,7 @@ jobs:
               {
                 "badge": "https://img.shields.io/github/license/paulosabayomi/CustUp?style=flat-square",
                 "alt": "MIT License",
-                "link": "${{ env.repo_url }}/blob/master/LICENSE"
+                "link": "${{ env.repo_url }}/blob/main/LICENSE"
               },
               {
                 "badge": "https://img.shields.io/badge/logo-javascript-blue?logo=javascript",
