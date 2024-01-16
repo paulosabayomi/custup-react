@@ -171,7 +171,7 @@ All CustUp options can be passed as props to the CustUp component, all [CustUp p
 [Visit the Documentation website](https://custup.pryxy.com) to see the complete CustUp documentation and other cool things you can do with CustUp.
 
 CustUp main [github repository](https://github.com/paulosabayomi/CustUp).
-
+  
 ## License
 
 [MIT License](https://github.com/paulosabayomi/custup-react/blob/main/LICENSE)
