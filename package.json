@@ -1,6 +1,6 @@
 {
   "name": "@custup/react",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Highly customisable React JS file upload library with zero dependencies",
   "private": false,
   "main": "dist/index.js",
@@ -9,6 +9,14 @@
     "url": "https://pryxy.com/about-me"
   },
   "license": "MIT",
+  "keywords": [
+    "custup",
+    "react-js-file-uploader",
+    "custup-react",
+    "file-uploader",
+    "customisable-file-uploader",
+    "customisable"
+  ],
   "types": "./dist/index.ts",
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
@@ -24,7 +32,7 @@
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "babel-cli": "^6.26.0",
-    "custup": "^0.2.0",
+    "custup": "^1.0.5",
     "jest-environment-jsdom": "^29.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -36,10 +44,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!my-library-dir)/'",
-    "eject": "react-scripts eject",
-    "rollup": "rollup --config rollup.config.ts --configPlugin typescript"
+    "rollup": "rollup --config rollup.config.ts --configPlugin typescript",
+    "package": "npm run rollup; npm run test"
   },
   "eslintConfig": {
     "extends": [

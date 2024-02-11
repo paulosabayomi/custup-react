@@ -9,8 +9,8 @@ const CustUp = React.memo(React.forwardRef((options: ICustUpOptions, ref) => {
     const _initialize_custup = React.useCallback(() => {
         if (_instance_Ref.current == null) {
                 const _c_inst = new MCustUp({
-                targetRootElement: "#" + options.id,
-                ...options
+                ...options,
+                targetRootElement: "#" + options.id
             });
             _instance_Ref.current = _c_inst;
         }

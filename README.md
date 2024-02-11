@@ -79,7 +79,7 @@ import { TCustUp } from "@custup/react";
 const ExampleComponent = React.memo((props: any) => {
     const ref1 = React.useRef<TCustUp | undefined>()
 
-    const exampleCustUpSubmit = React.memo(() => {
+    const exampleCustUpSubmit = React.useCallback(() => {
         ref1.current?.upload();
     }, [ref1.current])
 
@@ -110,7 +110,7 @@ const ExampleComponent = React.memo((props: any) => {
     const ref2 = React.useRef<TCustUp | undefined>()
     const ref3 = React.useRef<TCustUp | undefined>()
 
-    const exampleCustUpSubmit = React.memo(() => {
+    const exampleCustUpSubmit = React.useCallback(() => {
         ref1.current?.upload();
     }, [ref1.current])
 

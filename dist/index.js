@@ -40,7 +40,7 @@ var CustUp = React.memo(React.forwardRef(function (options, ref) {
     var _instance_Ref = React.useRef(null);
     var _initialize_custup = React.useCallback(function () {
         if (_instance_Ref.current == null) {
-            var _c_inst = new MCustUp(__assign({ targetRootElement: "#" + options.id }, options));
+            var _c_inst = new MCustUp(__assign(__assign({}, options), { targetRootElement: "#" + options.id }));
             _instance_Ref.current = _c_inst;
         }
     }, [_instance_Ref.current]);
