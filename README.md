@@ -6,6 +6,15 @@
 
 <!-- [START BADGES] -->
 <!-- Please keep comment here to allow auto update -->
+<p align="center">
+  <a href="https://github.com/paulosabayomi/custup-react/blob/main/LICENSE"><img src="https://img.shields.io/github/license/paulosabayomi/CustUp?style=flat-square" alt="MIT License" /></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript"><img src="https://img.shields.io/badge/logo-javascript-blue?logo=javascript" alt="Language" /></a>
+  <a href="https://reactjs.dev"><img src="https://img.shields.io/badge/logo-reactjs-blue?logo=react" alt="React JS" /></a>
+  <a href="https://github.com/paulosabayomi/custup-react/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
+  <a href="https://github.com/paulosabayomi/custup-react/actions/workflows/node.js.yml"><img src="https://github.com/paulosabayomi/custup-react/actions/workflows/node.js.yml/badge.svg" alt="Tests" /></a>
+  <a href="https://github.com/paulosabayomi/custup-react/actions/workflows/npm-publish.yml"><img src="https://github.com/paulosabayomi/custup-react/actions/workflows/npm-publish.yml/badge.svg" alt="Publish to NPM" /></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/logo-typescript-blue?logo=typescript" alt="TypeScript" /></a>
+</p>
 <!-- [END BADGES] -->
 
 The React JS version of CustUp, written in TypeScript
