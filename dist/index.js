@@ -39,20 +39,20 @@ typeof SuppressedError === "function" ? SuppressedError : function (error, suppr
 var CustUp = React.memo(React.forwardRef(function (options, ref) {
     var _instance_Ref = React.useRef(null);
     var _initialize_custup = React.useCallback(function () {
-        if (_instance_Ref.current == null) {
-            var _c_inst = new MCustUp(__assign(__assign({}, options), { targetRootElement: "#" + options.id }));
-            _instance_Ref.current = _c_inst;
-        }
-    }, [_instance_Ref.current]);
-    React.useLayoutEffect(function () {
-        if (!ref) {
-            _initialize_custup();
-        }
-    }, [_instance_Ref.current]);
-    React.useImperativeHandle(ref, function () {
-        _initialize_custup();
+        var _a;
+        if (_instance_Ref.current != null)
+            return _instance_Ref.current;
+        _instance_Ref.current = new MCustUp(__assign(__assign({}, options), { targetRootElement: "#" + options.id }));
+        (_a = options.on) === null || _a === void 0 ? void 0 : _a.forEach(function (ev) { var _a; return (_a = _instance_Ref.current) === null || _a === void 0 ? void 0 : _a.on(ev.type, ev.callbackFn); });
         return _instance_Ref.current;
     }, [_instance_Ref.current]);
+    React.useLayoutEffect(function () {
+        if (!ref)
+            _initialize_custup();
+    }, []);
+    React.useImperativeHandle(ref, function () {
+        return _initialize_custup();
+    }, []);
     return (jsx("div", __assign({ id: options.id }, { children: "CustUp: hmm looks like there is a conflicting id, please change the id of the current component." })));
 }));
 

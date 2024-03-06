@@ -1,6 +1,6 @@
 {
   "name": "@custup/react",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Highly customisable React JS file upload library with zero dependencies",
   "private": false,
   "main": "dist/index.js",
@@ -8,6 +8,10 @@
     "name": "Abayomi Amusa",
     "url": "https://pryxy.com/about-me"
   },
+  "bugs": {
+    "url": "https://github.com/paulosabayomi/CustUp/issues"
+  },
+  "homepage": "https://custup.pryxy.com",
   "license": "MIT",
   "keywords": [
     "custup",
@@ -18,6 +22,10 @@
     "customisable"
   ],
   "types": "./dist/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulosabayomi/CustUp.git"
+  },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@rollup/plugin-commonjs": "^25.0.7",
@@ -32,7 +40,7 @@
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "babel-cli": "^6.26.0",
-    "custup": "^1.0.5",
+    "custup": "^1.1.4",
     "jest-environment-jsdom": "^29.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
