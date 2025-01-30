@@ -4,7 +4,7 @@ import CustUp, {TCustUp} from '../';
 
 
 export const CustUpTestComp = () => {
-  const first_instance_ref = React.useRef<TCustUp | null>();
+  const first_instance_ref = React.useRef<TCustUp | null>(null);
   React.useEffect(() => {
     first_instance_ref.current?.setOptions({
       allowed_file_types: [],
@@ -56,7 +56,7 @@ export const CustUpTestComp = () => {
 }
 
 export const CustUpTest4Comp = () => {
-  const first_instance_ref = React.useRef<TCustUp | null>();
+  const first_instance_ref = React.useRef<TCustUp | null>(null);
   
   return (
     <div>
@@ -71,7 +71,7 @@ export const CustUpTest4Comp = () => {
 }
 
 export const CustUpTest2Comp = () => {
-  const first_instance_ref = React.useRef();
+  const first_instance_ref = React.useRef<TCustUp | null>(null);
 
   React.useEffect(() => {
     test('Ref test', () => {
@@ -91,12 +91,12 @@ export const CustUpTest2Comp = () => {
 }
 
 export const CustUpTest3Comp = () => {
-  const first_instance_ref = React.useRef();
-  const second_instance_ref = React.useRef();
-  const third_instance_ref = React.useRef();
-  const fourth_instance_ref = React.useRef();
-  const fifth_instance_ref = React.useRef();
-  const sixth_instance_ref = React.useRef();
+  const first_instance_ref = React.useRef<TCustUp | null>(null);
+  const second_instance_ref = React.useRef<TCustUp | null>(null);
+  const third_instance_ref = React.useRef<TCustUp | null>(null);
+  const fourth_instance_ref = React.useRef<TCustUp | null>(null);
+  const fifth_instance_ref = React.useRef<TCustUp | null>(null);
+  const sixth_instance_ref = React.useRef<TCustUp | null>(null);
 
   React.useEffect(() => {
     test('First instance test', () => {

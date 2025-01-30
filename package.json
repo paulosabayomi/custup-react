@@ -1,6 +1,6 @@
 {
   "name": "@custup/react",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Highly customisable React JS file upload library with zero dependencies",
   "private": false,
   "main": "dist/index.js",
@@ -28,27 +28,27 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@rollup/plugin-commonjs": "^25.0.7",
-    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-terser": "^0.4.4",
-    "@rollup/plugin-typescript": "^11.1.6",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.71",
-    "@types/react": "^18.2.48",
-    "@types/react-dom": "^18.2.18",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.12.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
     "babel-cli": "^6.26.0",
-    "custup": "^1.1.4",
+    "custup": "^1.1.7",
     "jest-environment-jsdom": "^29.7.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
-    "rollup": "^4.9.5",
-    "rollup-plugin-dts": "^6.1.0",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "rollup": "^4.32.1",
+    "rollup-plugin-dts": "^6.1.1",
+    "typescript": "^5.7.3",
+    "web-vitals": "^4.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -75,7 +75,7 @@
     ]
   },
   "peerDependencies": {
-    "react": "^18.2.0",
+    "react": "^19.0.0",
     "tslib": "^2.6.2"
   }
 }

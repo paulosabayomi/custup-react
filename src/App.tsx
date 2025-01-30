@@ -5,8 +5,8 @@ import CustUp from './lib'
 import { TCustUp } from '../';
 
 function App() {
-  const ref1 = React.useRef<TCustUp | undefined>();
-  const ref2 = React.useRef<TCustUp | undefined>();
+  const ref1 = React.useRef<TCustUp | undefined>(undefined);
+  const ref2 = React.useRef<TCustUp | undefined>(undefined);
 
   React.useEffect(() => {
 
