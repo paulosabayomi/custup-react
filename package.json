@@ -1,6 +1,6 @@
 {
   "name": "@custup/react",
-  "version": "0.3.0",
+  "version": "0.2.1",
   "description": "Highly customisable React JS file upload library with zero dependencies",
   "private": false,
   "main": "dist/index.js",
