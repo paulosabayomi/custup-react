@@ -1,17 +1,17 @@
 {
   "name": "@custup/react",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Highly customisable React JS file upload library with zero dependencies",
   "private": false,
   "main": "dist/index.js",
   "author": {
     "name": "Abayomi Amusa",
-    "url": "https://pryxy.com/about-me"
+    "url": "https://paulosabayomi.github.io/about-me/"
   },
   "bugs": {
     "url": "https://github.com/paulosabayomi/CustUp/issues"
   },
-  "homepage": "https://custup.pryxy.com",
+  "homepage": "https://paulosabayomi.github.io/custup-doc/",
   "license": "MIT",
   "keywords": [
     "custup",

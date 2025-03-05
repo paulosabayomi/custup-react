@@ -8,8 +8,21 @@
 <!-- Please keep comment here to allow auto update -->
 <!-- [END BADGES] -->
 
-The React JS version of CustUp, written in TypeScript
+<div>
+    <img src="https://github.com/paulosabayomi/CustUp/blob/master/_assets/custup-default.png" alt="Custup logo" width="45%" style="object-fit: contain; justify-self:center;"/>
+    <img src="https://github.com/paulosabayomi/CustUp/blob/master/_assets/custup-2.png" alt="Custup logo" width="45%" style="object-fit: contain; justify-self:center;"/>
+    <img src="https://github.com/paulosabayomi/CustUp/blob/master/_assets/custup-3.png" alt="Custup logo" width="45%" style="object-fit: contain; justify-self:center;"/>
+    <img src="https://github.com/paulosabayomi/CustUp/blob/master/_assets/custup-4.png" alt="Custup logo" width="45%" style="object-fit: contain; justify-self:center;"/>
+</div>
 
+The React JS version of CustUp, written in TypeScript, view [CustUp main repository](https://github.com/paulosabayomi/CustUp)
+  
+## Quick Links
+
+- [Documentation](https://paulosabayomi.github.io/custup-doc/)
+- [Check out the demo](https://paulosabayomi.github.io/custup-doc/docs/intro)
+- [CustUp on NPM](https://www.npmjs.com/package/custup)
+  
 ## Installation
 
 ```bash
@@ -166,9 +179,9 @@ const ExampleComponent = React.memo((props: any) => {
 
 ```
 
-All CustUp options can be passed as props to the CustUp component, all [CustUp props can be see here](https://custup.pryxy.com/docs/category/options).
+All CustUp options can be passed as props to the CustUp component, all [CustUp props can be see here](https://paulosabayomi.github.io/custup-doc/docs/category/options).
 
-[Visit the Documentation website](https://custup.pryxy.com) to see the complete CustUp documentation and other cool things you can do with CustUp.
+[Visit the Documentation website](https://paulosabayomi.github.io/custup-doc/) to see the complete CustUp documentation and other cool things you can do with CustUp.
   
 CustUp main [github repository](https://github.com/paulosabayomi/CustUp).
   
